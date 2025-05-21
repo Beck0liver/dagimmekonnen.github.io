@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagim Mekonnen | Graphics Designer</title>
+    <style>
+        :root {
+            --primary: #2d2d2d;
+            --secondary: #f5f5f5;
+            --accent: #ff6b6b;
+            --text: #333;
+            --light-text: #777;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--secondary);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0;
+            color: var(--primary);
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin: 1rem 0;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 300;
+        }
+        
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+        
+        section {
+            padding: 3rem 0;
+        }
+        
+        .about {
+            background-color: white;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 1.5rem;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skill {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .social-links {
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent);
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dagim Mekonnen</h1>
+            <p class="tagline">Graphics Designer</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate graphics designer with 5+ years of experience creating visually stunning designs. I specialize in branding, illustration, and digital media. My approach combines creativity with strategic thinking to deliver designs that not only look beautiful but also communicate effectively.</p>
+            <p>When I'm not designing, you can find me exploring new design trends, attending creative workshops, or working on personal art projects.</p>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+<p>Here are some of my recent YouTube thumbnail designs:</p>
+
+<div class="portfolio-grid">
+    <!-- Thumbnail 1 -->
+    <div class="portfolio-item">
+        <img src="assets/images/billionaire-thumbnail.jpg" alt="How I Became a Billionaire Thumbnail">
+        <div class="project-info">
+            <h3>How I Became a Billionaire</h3>
+            <p>High-converting thumbnail featuring money stack visuals and bold typography.</p>
+            <span class="project-tag">Finance</span>
+            <span class="project-tag">3D Effects</span>
+        </div>
+    </div>
+
+    <!-- Thumbnail 2 -->
+    <div class="portfolio-item">
+        <img src="assets/images/investing-thumbnail.jpg" alt="30 Years of Investing Thumbnail">
+        <div class="project-info">
+            <h3>30 Years of Investing</h3>
+            <p>Timeline-style thumbnail with growth chart and golden color scheme.</p>
+            <span class="project-tag">Stocks</span>
+            <span class="project-tag">Infographic</span>
+        </div>
+    </div>
+
+    <!-- Thumbnail 3 -->
+    <div class="portfolio-item">
+        <img src="assets/images/pro-thumbnail.jpg" alt="Professional YouTube Thumbnails">
+        <div class="project-info">
+            <h3>Professional Thumbnails</h3>
+            <p>Clean corporate-style thumbnail with subtle gradients and modern typography.</p>
+            <span class="project-tag">Business</span>
+            <span class="project-tag">Minimalist</span>
+        </div>
+    </div>
+
+    <!-- Thumbnail 4 -->
+    <div class="portfolio-item">
+        <img src="assets/images/custom-thumbnail.jpg" alt="Custom YouTube Thumbnail Design">
+        <div class="project-info">
+            <h3>Custom Thumbnail Design</h3>
+            <p>Fully customized thumbnail with hand-drawn elements and vibrant colors.</p>
+            <span class="project-tag">Illustration</span>
+            <span class="project-tag">Branded</span>
+        </div>
+    </div>
+
+    <!-- Thumbnail 5 -->
+    <div class="portfolio-item">
+        <img src="assets/images/attractive-thumbnail.jpg" alt="Attractive YouTube Thumbnail">
+        <div class="project-info">
+            <h3>Attractive YouTube Thumbnail</h3>
+            <p>Eye-catching design with contrasting colors and curiosity gap.</p>
+            <span class="project-tag">Viral Style</span>
+            <span class="project-tag">Click Magnet</span>
+        </div>
+    </div>
+
+    <!-- Thumbnail 6 -->
+    <div class="portfolio-item">
+        <img src="assets/images/gaming-thumbnail.jpg" alt="Gaming Thumbnails">
+        <div class="project-info">
+            <h3>Gaming Thumbnails</h3>
+            <p>High-energy esports thumbnail with character cutouts and glowing effects.</p>
+            <span class="project-tag">Fortnite</span>
+            <span class="project-tag">Action</span>
+        </div>
+    </div>
+</div>
+
+<style>
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.project-info {
+    padding: 18px;
+}
+
+.project-info h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.project-info p {
+    margin: 0 0 12px 0;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.project-tag {
+    display: inline-block;
+    background: #f3f3f3;
+    color: #555;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+</style>
+    </section>
+    
+    <section id="skills" class="about">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <span class="skill">Adobe Photoshop</span>
+                <span class="skill">Adobe Illustrator</span>
+                <span class="skill">Adobe InDesign</span>
+                <span class="skill">A/B Testing and Analytics</span>
+                <span class="skill">Brand Identity</span>
+                <span class="skill">Typography</span>
+                <span class="skill">Trend Awarness</span>
+                <span class="skill">Digital Illustration</span>
+                <span class="skill">Motion Graphics</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+            <p>Email: the99pureblooded@gmail.com</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dagim Mekonnen. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
